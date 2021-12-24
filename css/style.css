@@ -107,11 +107,17 @@ header .follow a:hover{
     color: #fff;
     border-radius: .5rem;
     padding: 1rem 1.5rem;
-    font-size: 3rem;
+    font-size:2.5rem;
     cursor: pointer;
+}
+@media (min-width:1024px) {
+    #menu-bars{
+        display: none;
+    }
 }
 
 .cursor-1{
+    display: none;
     position: absolute;
     top: 0; left: 0;
     height: 1rem; width: 1rem;
@@ -127,6 +133,7 @@ header .follow a:hover{
     opacity: .3;
 }
 .cursor-2{
+    display: none;
     position: absolute;
     top:0; left: 0;
     height: 4rem; width: 4rem;
@@ -567,7 +574,21 @@ header .follow a:hover{
 }
 
 
-
+.gotopbtn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: var(--main-color);
+	bottom: 3rem;
+	right: 1rem;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 25px;
+    border-radius: 50%;
+    z-index: 1000;
+}
 
 
 
@@ -592,7 +613,7 @@ header .follow a:hover{
         padding: 0;
     }
     #menu-bar{
-        display: initial;
+        display: block;
     }
     header{
         left: -120%;
@@ -613,6 +634,9 @@ header .follow a:hover{
     }
     body{
         width: 100%;
+    }
+    #menu-bar{
+        display: block;
     }
 
 }
